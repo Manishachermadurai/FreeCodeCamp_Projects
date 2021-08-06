@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+  <title>Survey Form</title>
+</head>
+<body>
+    <section id="head">
+        <h1 id="title">SURVEY FORM</h1>
+        <p id="description">Help us to take a small survey by filling the form..!</p>
+    </section>
+    <section id="form">
+        <form id="survey-form">
+            <label for="name" id="name-label">Name</label><br>
+            <input type="text" placeholder="Enter your Name" id="name" required><br>
+            <label for="email" id="email-label">Mail Id</label><br>
+            <input type="email" placeholder="Enter your Mail id" id="email" required><br>
+            <label for="number" id="number-label">How many points you give for this programme?</label><br>
+            <input type="number" placeholder="Points" min="0" max="10" id="number"><br>
+            <label for="dropdown">AGE</label><br>
+            <select id="dropdown">
+                <option value="10-18">10-18</option>
+                <option value="19-30">19-30</option>
+                <option value="31-58">31-58</option>
+            </select><br>
+            <label>Would like to get information from us for our next programme?</label><br>
+            <input type="radio" name="Profession" value="Yes">Yes
+            <input type="radio" name="Profession" value="No">No
+            <br>
+            <label>Languages known</label><br>
+            <input type="checkbox" name="Language" value="English">English
+            <input type="checkbox" name="Language" value="French">French
+            <input type="checkbox" name="Language" value="German">German
+            <input type="checkbox" name="Language" value="Chinese">Chinese
+            <br>
+            <label for="textarea">Leave your Comments</label><br>
+            <textarea rows="10" id="textarea" cols="30"></textarea><br>
+            <br>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </section>
+
+
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>  -->
+</body>
